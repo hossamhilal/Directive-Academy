@@ -196,17 +196,27 @@
     });
 
     // Fileds Animation
-    $('.field .form-control').focus(function(){
+    $('.field input').focus(function(){
         $(this).parent('.field').addClass('focused');
     });
-
-    $('.field .form-control').each(function() { 
+    $('.field textarea').focus(function(){
+        $(this).parent('.field').addClass('focused');
+    });
+    $('.field input').each(function() { 
         if ($(this).val() != "") {
             $(this).parent('.field').addClass('focused');   
         }
     });
-
-    $('.field .form-control').focusout(function(){
+    $('.field textarea').each(function() { 
+        if ($(this).val() != "") {
+            $(this).parent('.field').addClass('focused');   
+        }
+    });
+    $('.field input').focusout(function(){
+        if($(this).val() === "")
+        $(this).parent('.field').removeClass('focused');
+    });
+    $('.field textarea').focusout(function(){
         if($(this).val() === "")
         $(this).parent('.field').removeClass('focused');
     });

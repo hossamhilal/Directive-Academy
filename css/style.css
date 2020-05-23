@@ -1886,3 +1886,49 @@ button:focus {
         max-width: 40%;
     }
 }
+
+/*==========================||---------------------------||========================*/
+/*==========================||          Page Info        ||========================*/
+/*==========================||---------------------------||========================*/
+
+.pageInfo {
+    text-align: center;
+    color: var(--white);
+}
+
+.pageInfo h1 {
+    font: Bold 35px/30px SST Arabic;
+    margin-bottom: 20px;
+}
+
+.bradCrumbBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bradCrumbBox .breadcrumb {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bradCrumbBox,
+.bradCrumbBox a {
+    color: var(--white);
+    font: normal 14px/30px 'SST-Medium';
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: var(--white);
+    padding: 0 15px;
+}
+
+.bradCrumbBox .active  {
+    color: var(--secondColor);
+}
+
