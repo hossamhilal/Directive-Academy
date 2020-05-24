@@ -221,6 +221,26 @@
         $(this).parent('.field').removeClass('focused');
     });
 
+    // Show Password 
+    $('.showPassword').on('click' , function(){
+        let input = $(this).prev('input');
+        if (input.attr('type') == "password") {
+            input.attr('type' , 'text');
+        } else {
+            input.attr('type' , 'password');
+        }
+    });
+
+    // Show DropList
+    $('.hasDropdown').on('click' , function(e){
+        e.stopPropagation();
+        $(this).find('.dropList').toggleClass('show');
+    });
+
+    // Hide DropList
+    $(document).on('click' , function(){
+        $(this).find('.dropList').removeClass('show');
+    });
 
     // iniat WOW Js
     new WOW().init();

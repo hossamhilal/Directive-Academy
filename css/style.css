@@ -21,11 +21,14 @@
     --red: #F82323;
     --redDark: #dc1717;
     --blue: #40CDFF;
+    --blueLight : #F5F9FF;
     --maincolorDark: #2B5FFF;
 
     /* backgrounds */
     --grey: #F8F8F8;
     --grey2: #FBFBFB;
+    --grey3: #BFBFBF;
+    --grey4:#FCFCFC;
     --greyLight: #DDDDDD;
     --greyMedium: #EFEFEF;
     --greyDark: #F1F1F1;
@@ -36,11 +39,14 @@
     --shadow2: 0px 0px 12px #0000000F;
     --shadow3: 0px 3px 22px #E3E3E329;
     --shadow4: 0px 3px 33px #B2B2B229;
+    --shadow5: 0px 0px 40px #7272720A;
+    --shadow6: 0px 10px 18px #FF80B033;
 
     /* Borders */
     --border: 1px solid var(--textLight);
     --border2: 1px solid var(--greyMedium);
     --border3: 1px solid var(--blue);
+    --border4: 1px solid var(--greyLight);
 }
 
 /* fonts*/
@@ -141,7 +147,8 @@ a {
     text-decoration: none !important;
 }
 
-
+button:focus ,
+button:active ,
 input:active,
 input:focus,
 select:active,
@@ -166,6 +173,7 @@ textarea:active {
     border-radius: 23px;
     height: 45px;
     min-width: 120px;
+    cursor: pointer;
 }
 
 .blueBtn {
@@ -309,8 +317,84 @@ button:focus {
     border: 0;
 }
 
+.headerTopBox a:hover {
+    color: var(--secondColor);
+}
+
 .headerTop img {
     margin-left: 5px;
+}
+
+.hasDropdown {
+    text-align: left;
+    font-size: 10px;
+    line-height: 30px;
+    letter-spacing: 0.26px;
+    color: var(--white);
+    position: relative;
+    cursor: pointer;
+}
+
+.hasDropdown:hover {
+    color: var(--secondColor);
+}
+
+.dropList {
+    width: 184px;
+    background: var(--white);
+    border-radius: 0px 9px 9px 9px;
+    box-shadow: var(--shadow6);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 5px;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transform: translateY(30px);
+    transition: all .5s ease-in-out;
+}
+
+.dropList.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropList a {
+    color: var(--textLight);
+    font-size: 13px;
+    padding: 12px;
+    border-bottom: var(--border4);
+    display: flex;
+    border-left: 0;
+    width: 100%;
+    text-align: right;
+    align-items: center;
+    line-height: 20px;
+}
+
+.dropList a:first-of-type {
+    padding: 10px;
+}
+
+.dropList a:last-of-type {
+    border: 0;
+}
+
+.dropList img {
+    max-width: 14px;
+    margin-left: 10px;
+}
+
+.dropList a:hover {
+    color: var(--white);
+    background: var(--secondColor);
+    border-bottom-color: var(--secondColor);
+}
+
+.dropList a:hover img {
+    filter: brightness(0) invert(1);
 }
 
 .headerNav {
@@ -974,7 +1058,7 @@ button:focus {
 }
 
 .courseFooter .Btn img {
-    width: 15px;
+    width: 12px;
     margin-right: 8px;
 }
 
@@ -990,8 +1074,17 @@ button:focus {
     .courseFooter .Btn img {
         display: none;
     }
+
+    .courseFooter .Btn {
+        padding: 0 12px;
+    }
 }
 
+@media (min-width:992px) and (max-width:1024px) {
+    .courseFooter .Btn img {
+        display: none;
+    }
+}
 /*==========================||---------------------------||========================*/
 /*==========================||          Features         ||========================*/
 /*==========================||---------------------------||========================*/
@@ -1932,3 +2025,492 @@ button:focus {
     color: var(--secondColor);
 }
 
+
+/*==========================||---------------------------||========================*/
+/*==========================||          Page Form        ||========================*/
+/*==========================||---------------------------||========================*/
+
+.pageFormBox {
+    background: var(--white) 0% 0% no-repeat padding-box;
+    box-shadow: var(--shadow5);
+    border: 1px solid var(--grey);
+    width: 100%;
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 7% 9%;
+}
+
+.pageFormHeader {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pageFormHeader h1 {
+    font: normal 20px/28px 'SST-Bold';
+    color: var(--mainColor);
+}
+
+.pageFormHeader p {
+    color: var(--text);
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.pageFormBody .field {
+    margin: 20px 0;
+    height: auto;
+}
+
+.pageFormBody .field::after{
+    right: 15px;
+}
+
+.pageFormBody .field.focused::after {
+    width: calc(100% - 30px);
+}
+
+.pageFormBody .field label ,
+.options > label ,
+.option .optionName {
+    font: normal 14px/20px 'SST-Medium';
+    color: var(--textMedium);
+    margin-bottom: 10px;
+}
+
+.pageFormBody .field input , 
+.option {
+    height: 50px;
+    border-radius: 25px 0px 25px 25px;
+    background: var(--grey2) 0% 0% no-repeat padding-box;
+    font-size: 14px;
+    color: var(--textMedium);
+    padding: 0 20px;
+}
+
+.pageFormBody .field input::placeholder {
+    font-size: 14px;
+    color: var(--grey3);
+}
+
+.pageFormBody .field textarea {
+    border-radius: 25px 0px 25px 25px;
+    background: var(--grey2) 0% 0% no-repeat padding-box;
+    height: 122px;
+}
+
+.pageFormBody .field textarea::placeholder {
+    font-size: 14px;
+    color: var(--grey3);
+}
+
+.options {
+    margin: 20px 0;
+}
+
+.optionsList {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.option {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    padding-right: 45px;
+}
+
+.option:last-of-type {
+    margin: 0;
+}
+
+.option .optionName {
+    margin: 0;
+}
+
+.option .checkmark {
+    width: 14px;
+    height: 14px;
+    background: var(--white) 0% 0% no-repeat padding-box;
+    border: var(--border);
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.option input {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.option .checkmark::before {
+    content: "";
+    background: var(--mainColor);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: none;
+}
+
+.option input:checked + .checkmark {
+  border-color: var(--blue);
+}
+
+.option input:checked + .checkmark::before {
+    display: block;
+}
+
+
+@media (min-width:575px) {
+    .flexField {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .flexField .field {
+        width: calc( 50% - 10px );
+        margin: 0;
+    }
+}
+
+.customSelectBox {
+    position: relative;
+}
+
+.customSelectBox::after {
+    content: "\eac8";
+    font-family: IcoFont !important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    line-height: 1;
+    -webkit-font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+    font-size: 22px;
+    position: absolute;
+    top: 17px;
+    left: 15px;
+}
+
+.customSelectBox select {
+    height: 50px;
+    width: 100%;
+    display: block;
+    border-radius: 25px 0px 25px 25px;
+    background: var(--grey2) 0% 0% no-repeat padding-box;
+    font-size: 14px;
+    color: var(--textMedium);
+    padding: 0 20px;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.pageFormBody .blueBtn {
+    width: 100%;
+    border: 0;
+    font: normal 18px/24px 'JFFlat-medium';
+    margin-top: 40px;
+}
+
+.showPassword {
+    position: absolute;
+    left: 20px;
+    bottom: 12px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.pageFormLinks {
+    padding: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageFormLinks a , 
+.pageFormLinks p {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--textLight);
+    margin-bottom: 10px;
+}
+
+.pageFormLinks p a {
+    color: var(--mainColor);
+}
+
+.pageFormLinks a:hover {
+    color: var(--secondColor);
+}
+
+/*==========================||---------------------------||========================*/
+/*==========================||        Profile Page       ||========================*/
+/*==========================||---------------------------||========================*/
+
+.infoWrapper {
+    margin-bottom: 40px;
+    background: var(--white) 0% 0% no-repeat padding-box;
+    border: 1px solid var(--greyLight);
+    border-radius: 9px 9px 0 0;
+}
+
+.infoWrapperHead {
+    height: 60px;
+    background: var(--grey4) 0% 0% no-repeat padding-box;
+    border: 1px solid var(--greyLight);
+    border-radius: 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: calc( 100% + 2px );
+    margin: -1px -1px 0 0;
+}
+
+.infoWrapperHead h1 {
+    font: normal 20px/30px 'SST-Medium';
+    color: var(--textDark);
+    margin: 0;
+}
+
+.infoWrapperHead .link {
+    background: var(--mainColor);
+    color: var(--white);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 35px 0 20px;
+    margin: 0 0 0 -20px;
+    border-radius: 9px 23px 23px 9px;
+}
+
+.infoWrapperHead .link a {
+    color: var(--white);
+}
+
+.infoWrapperBody {
+    padding: 20px;
+}
+
+.profileCard {
+    display: flex;
+}
+
+.profileCardAvatar {
+    width: 80px;
+    height: 80px;
+}
+
+.profileCardData {
+    padding-right: 20px;
+}
+
+.profileCardData h2 {
+    font: normal 18px/30px 'SST-Medium';
+    color: var(--textMedium);
+}
+
+.profileCardData h3 {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--textLight);
+}
+
+.profileCardData p {
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--textLight);
+    margin-bottom: 10px;
+}
+
+.profileCardData p img {
+    margin-left: 5px;
+    max-width: 15px;
+}
+
+.profileCourses .col-12 {
+    padding: 15px;
+}
+
+.customTable {
+    border: var(--border4);
+    border-width: 1px 1px 0 0;
+    display: table;
+    width: 100%;
+}
+
+.customTableRow {
+    display: table;
+    width: 100%;
+    display: table-header-group;
+}
+
+.rowHead , 
+.rowBody {
+    display: table-row;
+}
+
+.rowHead {
+    background: var(--blueLight) 0% 0% no-repeat padding-box;
+    display: none;
+}
+
+.customTableRow:first-of-type .rowHead {
+    display: table-row;
+}
+
+.rowHead > div ,
+.rowBody > div {
+    display: table-cell;
+    border-bottom: var(--border4);
+    border-left: var(--border4);
+    text-align: center;
+    vertical-align: middle;
+    padding: 14px 20px;
+}
+
+.rowHead > div {
+    font: normal 15px/24px 'SST-Medium';
+    color: var(--textDark);
+}
+
+.rowBody > div {
+   font: normal 14px/24px 'SST-Medium';
+   color: var(--text);
+}
+
+.tableActions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tableActions a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: normal 12px/20px 'SST-Medium';
+    color: var(--text);
+}
+
+.tableActions a img {
+    margin-bottom: 10px;
+}
+
+.tableActions a:hover {
+    color: var(--secondColor);
+}
+
+.rowBody .seprate {
+    background: var(--greyLight);
+    width: 1px;
+    height: 25px;
+    display: block;
+}
+
+@media screen and (max-width:767px) {
+    .infoWrapper {
+        margin-bottom: 20px;
+    }
+    
+    .infoWrapperHead {
+        height: 40px;
+        padding: 0 15px;
+    }
+    
+    .infoWrapperHead h1 {
+        font: normal 14px/20px 'SST-Medium';
+    }
+    
+    .infoWrapperHead .link {
+        padding: 0 15px;
+        font: normal 11px/20px 'SST-Medium';
+    }
+    
+    .infoWrapperBody {
+        padding: 5px;
+    }
+    
+    .profileCardAvatar {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .profileCardData {
+        padding-right: 10px;
+    }
+    
+    .profileCardData h2 {
+        font: normal 14px/20px 'SST-Medium';
+        margin: 0;
+    }
+    
+    .profileCardData p {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .customTable {
+        border: 0;
+        display: block;
+    }
+
+    .customTableRow {
+        display: flex;
+        margin-bottom: 10px;
+        border: var(--border4);
+        border-width: 1px 1px 0 0;
+    }
+
+    .customTableRow:first-of-type .rowHead ,
+    .rowHead {
+        display: block;
+        width: 40%;
+    }
+
+    .rowBody {
+        display: block;
+        width: 60%;
+    }
+
+    .rowHead > div, .rowBody > div{
+        padding: 5px;
+        font: normal 10px/25px 'SST-Medium';
+        display: block;
+    }
+
+    .tableActions a {
+        flex-direction: row;
+        font-size: 10px;
+    }
+
+    .tableActions a img {
+        width: 13px;
+        margin: 0 0 0 5px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .rowHead > div, 
+    .rowBody > div {
+        padding: 5px;
+        font: normal 10px/25px 'SST-Medium';
+    }
+}
