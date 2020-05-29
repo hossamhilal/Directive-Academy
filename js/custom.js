@@ -330,6 +330,19 @@
             }
         });
     });
+
+    // Open PopUp
+    $('.showCenterPopup').on('click' , function(){
+        $('.centerPopup').addClass('show');
+        $('body').addClass('stopScroll');
+    });
+
+    // Close PopUp
+    $('.centerPopup .overlay').on('click' , function(){
+        $('.centerPopup').removeClass('show');
+        $('body').removeClass('stopScroll');
+    });
+    
            
     
 

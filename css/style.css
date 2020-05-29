@@ -1604,6 +1604,48 @@ button:focus {
     min-height: 300px;
 }
 
+.centerPopup {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    padding: 30px 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease-in-out;
+    overflow-y: auto;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, .6);
+}
+
+.centerPopup.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.centerPopup .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+}
+
+.centerPopup .pageFormBox {
+    position: relative;
+    z-index: 1;
+    max-width: 650px;
+    padding: 40px 5%;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
 @media (min-width:992px) {
     .popUp .popupContent iframe {
         min-height: 500px;
@@ -2368,6 +2410,7 @@ button:focus {
     margin: 0 0 0 -20px;
     border-radius: 9px 23px 23px 9px;
     font: normal 15px/30px 'SST-Bold';
+    cursor: pointer;
 }
 
 .infoWrapperHead .link a {
@@ -2376,6 +2419,10 @@ button:focus {
 
 .infoWrapperHead .link i {
     margin-left: 5px;
+}
+
+.infoWrapperHead .link:hover {
+    background: var(--secondColor);
 }
 
 .infoWrapperBody {
@@ -3867,3 +3914,41 @@ button:focus {
     width: 18px;
     margin: 0 0 0 10px;
 }
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||         SUCCESS PAGE      ||========================*/
+/*==========================||---------------------------||========================*/
+
+.successBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.successIcon {
+    margin-bottom: 30px;
+}
+
+.successBox h2 {
+    color: var(--mainColor);
+    font: normal 35px/62px 'SST-Bold';
+    letter-spacing: 0.75px;
+    margin-bottom: 30px;
+}
+
+.successBox p {
+    font: normal 14px/25px 'SST-Medium';
+    margin-bottom: 30px;
+}
+
+.successBox .Btn {
+    width: 100%;
+    max-width: 350px;
+}
+
