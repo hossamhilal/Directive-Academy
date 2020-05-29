@@ -21,18 +21,19 @@
     --red: #F82323;
     --redDark: #dc1717;
     --blue: #40CDFF;
-    --blueLight : #F5F9FF;
+    --blueLight: #F5F9FF;
     --maincolorDark: #2B5FFF;
 
     /* backgrounds */
     --grey: #F8F8F8;
     --grey2: #FBFBFB;
     --grey3: #BFBFBF;
-    --grey4:#FCFCFC;
+    --grey4: #FCFCFC;
     --greyLight: #DDDDDD;
     --greyMedium: #EFEFEF;
     --greyDark: #F1F1F1;
     --transparent: #3C1F70;
+    --dark: #484848;
 
     /* Shadow */
     --shadow: 0px 3px 10px #00000029;
@@ -139,7 +140,7 @@ body {
 }
 
 p {
-    color: var(--textGrey);
+    color: var(--text);
     margin: 0;
 }
 
@@ -147,8 +148,8 @@ a {
     text-decoration: none !important;
 }
 
-button:focus ,
-button:active ,
+button:focus,
+button:active,
 input:active,
 input:focus,
 select:active,
@@ -270,6 +271,16 @@ textarea:active {
     background: var(--secondColor);
     color: var(--white);
 }
+
+.darkBtn {
+    background: var(--dark);
+    color: var(--white);
+}
+
+.darkBtn:hover {
+    opacity: .7;
+}
+
 
 button:active,
 button:hover,
@@ -582,7 +593,7 @@ button:focus {
         z-index: 1;
         position: absolute;
         top: 10px;
-        left: calc( 50% - 90px );
+        left: calc(50% - 90px);
         width: 180px;
     }
 
@@ -630,7 +641,7 @@ button:focus {
         left: 0;
         width: 100vw;
         height: 100vh;
-        background: rgba(0,0,0,.85);
+        background: rgba(0, 0, 0, .85);
         z-index: 998;
         opacity: 0;
         visibility: hidden;
@@ -640,7 +651,7 @@ button:focus {
         opacity: 1 !important;
         visibility: visible !important;
     }
-    
+
     .menuBtn {
         width: 24px;
         height: 16px;
@@ -651,7 +662,7 @@ button:focus {
         margin-right: 30px;
         cursor: pointer;
     }
-    
+
     .menuBtn span {
         width: 100%;
         background: var(--white);
@@ -660,10 +671,10 @@ button:focus {
         border-radius: 5px;
         transition: all .4s ease-in-out;
     }
-    
+
     .menuBtn span:nth-child(2) {
         width: 75%;
-    }    
+    }
 
     .menuBtn:hover span {
         width: 100%;
@@ -673,21 +684,21 @@ button:focus {
     .headerSlider {
         padding: 30px 0;
     }
-    
+
     .headerSlider .item {
         min-height: 250px;
     }
-    
+
     .headerSlider h1 {
         font: normal 20px/35px 'SST-Bold';
     }
-    
+
     .headerSlider .blueBtn {
         min-width: 125px;
         font: normal 13px/25px 'SST-Bold';
         height: 40px;
         margin-top: -10px;
-    }    
+    }
 }
 
 @media (min-width:768px) and (max-width:992px) {
@@ -696,11 +707,11 @@ button:focus {
         height: 30px;
         background-size: 15px;
     }
-    
+
     .owlNav .owl-nav .owl-prev {
         right: -30px;
     }
-    
+
     .owlNav .owl-nav .owl-next {
         left: -30px;
     }
@@ -840,26 +851,26 @@ button:focus {
     .secHeader {
         margin-bottom: 30px;
     }
-    
+
     .secHeader h1 {
         font: normal 20px/35px 'SST-Bold';
     }
-    
+
     .secHeader p {
         font: normal 13px/20px 'SST-Medium';
     }
-    
+
     .secPadding {
         padding: 30px 0;
     }
-    
+
     .tabsList a {
         display: flex;
         min-width: fit-content;
         height: 35px;
         font-size: 12px;
     }
-    
+
     .tabsList {
         overflow-x: scroll;
         padding-bottom: 15px;
@@ -1066,11 +1077,11 @@ button:focus {
     .courseVector {
         height: 200px;
     }
-    
+
     .courseBlock h2 {
         font-size: 14px;
     }
-    
+
     .courseFooter .Btn img {
         display: none;
     }
@@ -1085,6 +1096,7 @@ button:focus {
         display: none;
     }
 }
+
 /*==========================||---------------------------||========================*/
 /*==========================||          Features         ||========================*/
 /*==========================||---------------------------||========================*/
@@ -1137,7 +1149,7 @@ button:focus {
     .features {
         padding: 0;
     }
-    
+
     .features::after {
         width: 80px;
         height: 80px;
@@ -1253,11 +1265,11 @@ button:focus {
     .testimonialBlock {
         padding: 15px;
     }
-    
+
     .testimonialUser {
         margin-bottom: 10px;
     }
-    
+
     .testimonialAvatar {
         width: 45px;
         height: 45px;
@@ -1267,7 +1279,7 @@ button:focus {
         font-size: 13px;
         line-height: 20px;
     }
-    
+
     .testimonialBlock::before {
         opacity: .4;
         top: 15px;
@@ -1373,20 +1385,20 @@ button:focus {
         margin-top: 120px;
         padding-bottom: 40px;
     }
-    
+
     .homeVideo .col-12:first-of-type {
         order: 2;
     }
-    
+
     .homeVideo .col-12:last-of-type {
         order: 1;
     }
-    
+
     .homeVideoBox {
         width: 100%;
         height: 220px;
     }
-    
+
     .homeVideoBox .playButton {
         width: 60px;
         height: 40px;
@@ -1394,15 +1406,15 @@ button:focus {
         top: calc(50% - 20px);
         left: calc(50% - 30px);
     }
-    
+
     .homeVideoInfo {
         padding: 30px 0 0 0;
     }
-    
+
     .homeVideoInfo h2 {
         font-size: 20px;
     }
-    
+
     .homeVideoInfo p {
         font-size: 13px;
         line-height: 22px;
@@ -1413,7 +1425,7 @@ button:focus {
     .homeVideoBox {
         height: 350px;
     }
-    
+
     .homeVideoInfo {
         padding: 40px 0 0 0;
     }
@@ -1519,7 +1531,7 @@ button:focus {
     .videoItem {
         height: 200px;
     }
-    
+
     .videoItem .playButton {
         width: 46px;
         height: 34px;
@@ -1676,22 +1688,22 @@ button:focus {
     .newsLetterBox {
         padding: 10px 5%;
     }
-    
+
     .newsLetter h1 {
         font-size: 15px;
     }
-    
+
     .newsLetter .blueBtn {
         border-radius: 25px;
         margin: auto;
         height: 40px;
     }
-    
+
     .newsLetter input {
         width: 100%;
         margin-bottom: 20px;
     }
-    
+
     .newsLetter .newsLetterForm {
         flex-direction: column;
     }
@@ -1701,6 +1713,7 @@ button:focus {
     .newsLetter h1 {
         font-size: 15px;
     }
+
     .owlVideos .owl-item.active.center {
         transform: scale(1.2, 1.2);
         z-index: 1;
@@ -1912,29 +1925,29 @@ button:focus {
         font-size: 12px;
         line-height: 22px;
     }
-    
+
     .footerInfo ul {
         padding: 10px 0 0 0;
     }
-    
+
     .footerInfo li {
         font-size: 13px;
         line-height: 20px;
     }
-    
+
     .footerLinksTitle {
         font: normal 14px/20px 'SST-Medium';
     }
-    
+
     .footerLinksBox a {
         font-size: 12px;
         line-height: 25px;
     }
-    
+
     .footerLinksTitle::after {
         margin: 10px 0 10px 0;
     }
-        
+
     .contact-form {
         margin: 20px 0;
     }
@@ -1947,7 +1960,7 @@ button:focus {
     .contact-form .social {
         bottom: 6px;
     }
-    
+
     .copyright {
         padding: 10px 0;
     }
@@ -2021,10 +2034,29 @@ button:focus {
     padding: 0 15px;
 }
 
-.bradCrumbBox .active  {
+.bradCrumbBox .active {
     color: var(--secondColor);
 }
 
+
+@media screen and (max-width:767px) {
+    .pageInfo {
+        margin-top: 40px;
+    }
+
+    .pageInfo h1 {
+        font-size: 15px;
+    }
+
+    .bradCrumbBox,
+    .bradCrumbBox a {
+        font-size: 11px;
+    }
+
+    .breadcrumb-item+.breadcrumb-item::before {
+        padding: 0 5px;
+    }
+}
 
 /*==========================||---------------------------||========================*/
 /*==========================||          Page Form        ||========================*/
@@ -2061,7 +2093,7 @@ button:focus {
     height: auto;
 }
 
-.pageFormBody .field::after{
+.pageFormBody .field::after {
     right: 15px;
 }
 
@@ -2069,15 +2101,15 @@ button:focus {
     width: calc(100% - 30px);
 }
 
-.pageFormBody .field label ,
-.options > label ,
+.pageFormBody .field label,
+.options>label,
 .option .optionName {
     font: normal 14px/20px 'SST-Medium';
     color: var(--textMedium);
     margin-bottom: 10px;
 }
 
-.pageFormBody .field input , 
+.pageFormBody .field input,
 .option {
     height: 50px;
     border-radius: 25px 0px 25px 25px;
@@ -2160,11 +2192,11 @@ button:focus {
     display: none;
 }
 
-.option input:checked + .checkmark {
-  border-color: var(--blue);
+.option input:checked+.checkmark {
+    border-color: var(--blue);
 }
 
-.option input:checked + .checkmark::before {
+.option input:checked+.checkmark::before {
     display: block;
 }
 
@@ -2173,10 +2205,11 @@ button:focus {
     .flexField {
         display: flex;
         justify-content: space-between;
+        margin-top: 30px;
     }
 
     .flexField .field {
-        width: calc( 50% - 10px );
+        width: calc(50% - 10px);
         margin: 0;
     }
 }
@@ -2227,12 +2260,19 @@ button:focus {
     margin-top: 40px;
 }
 
+.calenderIcon,
+.editField,
 .showPassword {
     position: absolute;
     left: 20px;
     bottom: 12px;
     width: 20px;
     cursor: pointer;
+}
+
+.pageFormBody .field .calenderIcon {
+    margin: 0;
+    line-height: 25px;
 }
 
 .pageFormLinks {
@@ -2243,7 +2283,7 @@ button:focus {
     align-items: center;
 }
 
-.pageFormLinks a , 
+.pageFormLinks a,
 .pageFormLinks p {
     font-size: 16px;
     line-height: 22px;
@@ -2257,6 +2297,34 @@ button:focus {
 
 .pageFormLinks a:hover {
     color: var(--secondColor);
+}
+
+.required {
+    position: relative;
+}
+
+.required::after {
+    content: "*";
+    color: var(--secondColor);
+}
+
+@media screen and (max-width:768px) {
+    .pageFormBox {
+        padding: 7% 5%;
+    }
+
+    .pageFormHeader h1 {
+        font-size: 13px;
+    }
+
+    .pageFormHeader p,
+    .pageFormBody .field label,
+    .options>label,
+    .option .optionName,
+    .pageFormBody .field input,
+    .option {
+        font-size: 12px;
+    }
 }
 
 /*==========================||---------------------------||========================*/
@@ -2279,7 +2347,7 @@ button:focus {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    width: calc( 100% + 2px );
+    width: calc(100% + 2px);
     margin: -1px -1px 0 0;
 }
 
@@ -2299,10 +2367,15 @@ button:focus {
     padding: 0 35px 0 20px;
     margin: 0 0 0 -20px;
     border-radius: 9px 23px 23px 9px;
+    font: normal 15px/30px 'SST-Bold';
 }
 
 .infoWrapperHead .link a {
     color: var(--white);
+}
+
+.infoWrapperHead .link i {
+    margin-left: 5px;
 }
 
 .infoWrapperBody {
@@ -2362,7 +2435,7 @@ button:focus {
     display: table-header-group;
 }
 
-.rowHead , 
+.rowHead,
 .rowBody {
     display: table-row;
 }
@@ -2376,8 +2449,8 @@ button:focus {
     display: table-row;
 }
 
-.rowHead > div ,
-.rowBody > div {
+.rowHead>div,
+.rowBody>div {
     display: table-cell;
     border-bottom: var(--border4);
     border-left: var(--border4);
@@ -2386,14 +2459,14 @@ button:focus {
     padding: 14px 20px;
 }
 
-.rowHead > div {
+.rowHead>div {
     font: normal 15px/24px 'SST-Medium';
     color: var(--textDark);
 }
 
-.rowBody > div {
-   font: normal 14px/24px 'SST-Medium';
-   color: var(--text);
+.rowBody>div {
+    font: normal 14px/24px 'SST-Medium';
+    color: var(--text);
 }
 
 .tableActions {
@@ -2429,39 +2502,39 @@ button:focus {
     .infoWrapper {
         margin-bottom: 20px;
     }
-    
+
     .infoWrapperHead {
         height: 40px;
         padding: 0 15px;
     }
-    
+
     .infoWrapperHead h1 {
         font: normal 14px/20px 'SST-Medium';
     }
-    
+
     .infoWrapperHead .link {
         padding: 0 15px;
         font: normal 11px/20px 'SST-Medium';
     }
-    
+
     .infoWrapperBody {
         padding: 5px;
     }
-    
+
     .profileCardAvatar {
         width: 45px;
         height: 45px;
     }
-    
+
     .profileCardData {
         padding-right: 10px;
     }
-    
+
     .profileCardData h2 {
         font: normal 14px/20px 'SST-Medium';
         margin: 0;
     }
-    
+
     .profileCardData p {
         font-size: 12px;
         margin-bottom: 5px;
@@ -2479,7 +2552,7 @@ button:focus {
         border-width: 1px 1px 0 0;
     }
 
-    .customTableRow:first-of-type .rowHead ,
+    .customTableRow:first-of-type .rowHead,
     .rowHead {
         display: block;
         width: 40%;
@@ -2490,7 +2563,8 @@ button:focus {
         width: 60%;
     }
 
-    .rowHead > div, .rowBody > div{
+    .rowHead>div,
+    .rowBody>div {
         padding: 5px;
         font: normal 10px/25px 'SST-Medium';
         display: block;
@@ -2508,9 +2582,1288 @@ button:focus {
 }
 
 @media (min-width:768px) and (max-width:1024px) {
-    .rowHead > div, 
-    .rowBody > div {
+
+    .rowHead>div,
+    .rowBody>div {
         padding: 5px;
         font: normal 10px/25px 'SST-Medium';
     }
+}
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||    Profile Settings       ||========================*/
+/*==========================||---------------------------||========================*/
+
+.avatarUpload {
+    width: 97px;
+    height: 97px;
+    margin: 0 auto 30px;
+    position: relative;
+}
+
+.avatarUploadBtn {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    top: calc(50% - 14px);
+    left: -14px;
+    border: 1px solid var(--white);
+}
+
+.avatarUploadBtn input {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.avatarUploadBtn label {
+    background: var(--mainColor);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.avatarUploadBtn input:hover+label,
+.avatarUploadBtn input:focus+label {
+    background: var(--secondColor);
+}
+
+.avatarUploadPreview {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid var(--greyDark);
+}
+
+.avatarUploadPreview img {
+    height: 100%;
+    border-radius: 50%;
+}
+
+.profileSetting .darkBtn {
+    margin: 30px 0 10px 0;
+    font: normal 14px/24px 'JFFlat-medium';
+}
+
+.profileSetting .blueBtn {
+    margin: 0;
+    font: normal 14px/24px 'JFFlat-medium';
+}
+
+/*==========================||---------------------------||========================*/
+/*==========================||          DatePicker       ||========================*/
+/*==========================||---------------------------||========================*/
+
+.ui-datepicker td span,
+.ui-datepicker td a {
+    display: flex;
+    padding: 4px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2px;
+}
+
+.ui-widget-content .ui-state-hover {
+    border: var(--border3);
+    background: var(--mainColor);
+    color: var(--white);
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+    border: 1px solid var(--secondColor);
+    background: var(--secondColor);
+    color: var(--white);
+}
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||         About Page        ||========================*/
+/*==========================||---------------------------||========================*/
+
+.aboutVector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.aboutVector img {
+    width: 100%;
+    max-width: 530px;
+}
+
+.aboutPage h2 {
+    font: normal 25px/35px 'SST-Medium';
+    color: var(--dark);
+    margin: 30px 0 5px 0;
+}
+
+.aboutPage p {
+    letter-spacing: 0.24px;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.aboutPage ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.aboutPage li {
+    margin-bottom: 15px;
+}
+
+.aboutPage ul label {
+    font: normal 16px/30px 'SST-Medium';
+    color: var(--textDark);
+    position: relative;
+    margin: 0;
+}
+
+.aboutPage ul label::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: var(--secondColor);
+    display: inline-block;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:768px) {
+    .aboutPage h2 {
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    .aboutPage p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .aboutPage ul label {
+        font-size: 14px;
+    }
+}
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||       Lecturers Page      ||========================*/
+/*==========================||---------------------------||========================*/
+
+.lecturerInfo .infoWrapper {
+    display: block;
+    transition: all .5s ease-in-out;
+}
+
+.lecturerInfo .infoWrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow4);
+    border-radius: 9px;
+}
+
+.lecturerInfo .infoWrapper:hover h2 {
+    color: var(--secondColor);
+}
+
+.lecturerHead {
+    display: flex;
+    align-items: center;
+}
+
+.lecturerHead h2 {
+    margin: 0;
+}
+
+.rate {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 30px 0 0;
+    font-size: 12px;
+    color: var(--grey3);
+}
+
+.rate li {
+    margin-right: 2px;
+}
+
+.rate .orange {
+    color: var(--secondColor);
+}
+
+.lecturerDescription {
+    padding: 10px 0 0 0;
+}
+
+.lecturerDescription p {
+    font-size: 15px;
+    line-height: 28px;
+}
+
+@media screen and (max-width:425px) {
+    .lecturerHead {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .rate {
+        margin: 5px 0;
+        font-size: 9px;
+    }
+
+    .lecturerDescription p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+
+/*==========================||---------------------------||========================*/
+/*==========================||        Contact Page       ||========================*/
+/*==========================||---------------------------||========================*/
+
+.contactInfoBox {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactInfoBox .icon {
+    width: 50px;
+    height: 50px;
+    background: var(--mainColor);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.contactInfoBox h5 {
+    font: normal 18px/35px 'JFFlat-medium';
+    margin: 0;
+}
+
+.contactInfoBox p {
+    font: normal 14px/35px 'JFFlat-medium';
+}
+
+.contactFormHeader .col-12:nth-child(2) {
+    position: relative;
+}
+
+.contactFormHeader .col-12:nth-child(2)::after,
+.contactFormHeader .col-12:nth-child(2)::before {
+    content: "";
+    width: 1px;
+    height: 45px;
+    background: var(--grey3);
+    display: block;
+    position: absolute;
+    top: calc(50% - 45px/2);
+}
+
+.contactFormHeader .col-12:nth-child(2)::before {
+    right: 0;
+}
+
+.contactFormHeader .col-12:nth-child(2)::after {
+    left: 0;
+}
+
+@media screen and (max-width:575px) {
+
+    .contactFormHeader .col-12:nth-child(2)::before,
+    .contactFormHeader .col-12:nth-child(2)::after {
+        display: none;
+    }
+
+    .contactInfoBox .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contactInfoBox h5 {
+        font-size: 14px;
+    }
+
+    .contactInfoBox p {
+        font-size: 12px;
+    }
+
+}
+
+/*==========================||---------------------------||========================*/
+/*==========================||          Blogs Page       ||========================*/
+/*==========================||---------------------------||========================*/
+
+.blogBox {
+    border-radius: 13px 13px 5px 5px;
+    overflow: hidden;
+    box-shadow: none;
+    border: var(--border);
+    border-color: var(--grey);
+    transition: all .5s ease-in-out;
+    margin-top: 30px;
+}
+
+.blogBox a {
+    display: block;
+}
+
+.blogBox .courseData>p {
+    font-size: 13px;
+    line-height: 23px;
+}
+
+.blogBox .courseTime {
+    margin: 15px 0;
+}
+
+.blogBox .courseTime span:first-of-type {
+    border-color: var(--grey);
+}
+
+.blogBox:hover {
+    background: var(--white);
+    box-shadow: var(--shadow4);
+    cursor: pointer;
+}
+
+.blogBox:hover h2 {
+    color: var(--secondColor);
+}
+
+.blogPage .blogVector {
+    margin-bottom: 30px;
+}
+
+.blogPage .blogData {
+    border: var(--border);
+    border-color: var(--grey);
+    padding: 30px;
+}
+
+.blogPage h2 {
+    font: normal 30px/40px 'SST-Bold';
+    margin-bottom: 15px;
+}
+
+.blogPage .blogData>p {
+    font: normal 16px/28px 'SST-Medium';
+    margin-bottom: 20px;
+}
+
+.blogPage .blogData>p:last-of-type {
+    margin-bottom: 0;
+}
+
+.blogPage .courseTime p {
+    font-size: 13px;
+}
+
+.blogPage .courseTime span:first-of-type {
+    border-color: var(--grey);
+}
+
+@media screen and (max-width:768px) {
+    .blogPage .blogData {
+        padding: 10px;
+    }
+
+    .blogPage h2 {
+        font: normal 14px/30px 'SST-Bold';
+        margin-bottom: 5px;
+    }
+
+    .blogPage .blogData>p {
+        font: normal 13px/23px 'SST-Medium';
+        margin-bottom: 10px;
+    }
+}
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||         Courses Page      ||========================*/
+/*==========================||---------------------------||========================*/
+
+.sideWrapper {
+    border: var(--border);
+    border-color: var(--grey);
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.sideWrapper h2 {
+    background: var(--mainColor);
+    color: var(--white);
+    font: normal 17px/21px 'SST-Bold';
+    padding: 18px 20px;
+    border-radius: 9px;
+    margin: 0;
+}
+
+.sideWrapper .list a {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    font: normal 15px/40px 'SST-Medium';
+    border-bottom: var(--border);
+    border-color: var(--grey);
+    color: var(--textMedium);
+}
+
+.sideWrapper .list .active,
+.sideWrapper .list a:hover {
+    color: var(--secondColor);
+}
+
+.sideWrapper .list a:last-of-type {
+    border: 0;
+}
+
+.coursesPageInfo {
+    margin-bottom: 30px;
+}
+
+.coursesPageInfo h1 {
+    font: normal 22px/40px 'SST-Bold';
+}
+
+.coursesPageInfo p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.coursesPage .coursesBox .row {
+    margin: 0 -8px;
+}
+
+.coursesPage .coursesBox .col-12 {
+    padding: 8px;
+}
+
+.coursesBox .tabsList {
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+.coursesPage .coursesBox .tabsList a {
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.coursesPage .courseVector {
+    height: 200px;
+}
+
+.coursesPage .courseBlock h2 {
+    font-size: 15px;
+}
+
+.coursesPage .Btn {
+    padding: 0 15px;
+    min-width: 100px;
+}
+
+.coursesPage .Btn img {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .sideWrapper {
+        margin-bottom: 20px;
+    }
+
+    .sideWrapper h2 {
+        padding: 12px 10px;
+        font-size: 14px;
+    }
+
+    .sideWrapper .list a {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .coursesPageInfo h1 {
+        font-size: 15px;
+    }
+
+}
+
+/*==========================||---------------------------||========================*/
+/*==========================||          Pagination       ||========================*/
+/*==========================||---------------------------||========================*/
+
+.pagination {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination a {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    color: var(--text);
+    font: normal 17px/20px 'JFFlat-Regular';
+}
+
+.pagination .active,
+.pagination a:hover {
+    color: var(--secondColor);
+}
+
+.pagination a:first-of-type,
+.pagination a:last-of-type {
+    background: var(--grey);
+    border-radius: 50%;
+}
+
+.pagination a:first-of-type:hover,
+.pagination a:last-of-type:hover {
+    background: var(--mainColor);
+    color: var(--white);
+}
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||          Course Page      ||========================*/
+/*==========================||---------------------------||========================*/
+
+.courseIntoVideo {
+    margin-bottom: 25px;
+}
+
+.courseIntoVideo iframe {
+    width: 100%;
+    margin: 0;
+}
+
+.coursePageInfo .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.coursePageInfo .head h1 {
+    font: normal 30px/45px 'SST-Bold';
+    color: var(--textDark);
+}
+
+.coursePageInfo .head a {
+    padding: 0 20px;
+}
+
+.coursePageInfo .courseTime {
+    padding-bottom: 10px;
+}
+
+.coursePageInfo .courseTime p {
+    font-size: 16px;
+}
+
+.coursePageInfo .courseTime img {
+    width: 19px;
+}
+
+.chapter {
+    margin-bottom: 20px;
+}
+
+.chapterHead {
+    background: var(--blueLight);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    color: var(--textDark);
+    font: normal 16px/30px 'SST-Medium';
+    border-radius: 7px;
+    position: relative;
+}
+
+.chapterHead::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--textDark);
+    margin-left: 10px;
+}
+
+.chapterBody ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.chapterBody li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: var(--border4);
+    border-color: var(--grey);
+}
+
+.chapterBody label {
+    margin: 0;
+    font: normal 14px/30px 'SST-Medium';
+    color: var(--text);
+}
+
+.chapterBody span {
+    width: 22px;
+    height: 22px;
+    background: var(--mainColor);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.chapterBody span:hover {
+    background: var(--secondColor);
+}
+
+@media screen and (max-width:767px) {
+    .coursePageInfo .head {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .coursePageInfo .head h1 {
+        font: normal 15px/25px 'SST-Bold';
+    }
+
+    .coursePageInfo .head a {
+        font-size: 13px;
+        height: 35px;
+    }
+
+    .coursePageInfo .courseTime p {
+        font-size: 13px;
+    }
+
+    .coursePageInfo .courseTime img {
+        width: 12px;
+    }
+
+    .chapter {
+        margin-bottom: 10px;
+    }
+
+    .chapterHead {
+        padding: 5px 10px;
+        font: normal 14px/25px 'SST-Medium';
+    }
+
+    .chapterBody li {
+        padding: 5px 0;
+    }
+
+    .chapterBody label {
+        font: normal 12px/30px 'SST-Medium';
+    }
+}
+
+@media (min-width:992px) {
+    .courseIntoVideo iframe {
+        height: 480px;
+    }
+}
+
+/*==========================||---------------------------||========================*/
+/*==========================||            Share          ||========================*/
+/*==========================||---------------------------||========================*/
+
+.share {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.share label {
+    margin: 0 0 0 15px;
+}
+
+.share .list {
+    display: flex;
+    align-items: center;
+}
+
+.share .list a {
+    display: block;
+    margin: 0 5px;
+    width: 27px;
+    height: 27px;
+}
+
+.share .list a img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+@media screen and (max-width:767px) {
+    .share .list a {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/*==========================||---------------------------||========================*/
+/*==========================||          Accordion        ||========================*/
+/*==========================||---------------------------||========================*/
+
+.accordion {
+    margin-bottom: 30px;
+    background: var(--white) 0% 0% no-repeat padding-box;
+    border: var(--border4);
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.accordionHead {
+    background: var(--grey4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    color: var(--textDark);
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.accordionHead h3 {
+    margin: 0;
+    font: normal 20px/30px 'SST-Medium';
+}
+
+.accordionBody {
+    padding: 20px;
+    transition: all .5s ease-in-out;
+    display: none;
+}
+
+.accordionBody p {
+    margin-bottom: 10px;
+    letter-spacing: 0.24px;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.accordionBody p:last-of-type {
+    margin: 0;
+}
+
+.accordion.open {
+    border-radius: 9px 9px 0 0;
+}
+
+.accordion.open .accordionHead {
+    background: var(--mainColor);
+    color: var(--white);
+}
+
+.accordion.open .accordionIcon {
+    transform: rotate(180deg);
+    transition: all .5s ease-in-out;
+}
+
+.accordion.open .accordionBody {
+    display: block;
+}
+
+.accordion .profileCardAvatar {
+    width: 50px;
+    height: 50px;
+}
+
+.accordion .profileCardData h2 {
+    font-size: 15px;
+}
+
+@media screen and (max-width:767px) {
+    .accordion {
+        margin-bottom: 20px;
+    }
+
+    .accordionHead {
+        padding: 5px 10px;
+    }
+
+    .accordionHead h3 {
+        font: normal 14px/25px 'SST-Medium';
+    }
+
+    .accordionBody {
+        padding: 10px;
+    }
+
+    .accordionBody p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+}
+
+/*==========================||---------------------------||========================*/
+/*==========================||          Comments         ||========================*/
+/*==========================||---------------------------||========================*/
+
+.comment {
+    padding: 20px 0;
+    border-bottom: var(--border4);
+}
+
+.comment h5 {
+    color: var(--textLight);
+    font-size: 12px;
+    margin: 5px 0 0 0;
+}
+
+.comment .profileCardData {
+    width: calc(100% - 50px);
+}
+
+.comment .lecturerHead {
+    justify-content: space-between;
+}
+
+.comment .rate {
+    font-size: 15px;
+}
+
+.comment:first-of-type {
+    padding-top: 0;
+}
+
+
+.addComment {
+    padding: 20px 0 0 0;
+}
+
+.addComment h2 {
+    font: normal 24px/30px 'SST-Bold';
+    color: var(--textDark);
+    margin-bottom: 15px;
+}
+
+.addComment .textarea-field {
+    height: 160px;
+}
+
+.addComment textarea {
+    background: var(--grey2) 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.addComment textarea::placeholder {
+    font-size: 14px;
+    color: var(--grey3);
+}
+
+.addComment .Btn {
+    width: 175px;
+    border: 0;
+    margin: 30px 0 0 0;
+}
+
+@media screen and (max-width:767px) {
+    .comment {
+        padding: 10px 0;
+    }
+
+    .addComment h2 {
+        font: normal 17px/30px 'SST-Bold';
+    }
+
+    .addComment .Btn {
+        font-size: 13px;
+        height: 35px;
+    }
+}
+
+/*==========================||---------------------------||========================*/
+/*==========================||         Add Rating        ||========================*/
+/*==========================||---------------------------||========================*/
+
+.addRate {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin: 0 0 20px 0;
+    font-size: 25px;
+    color: var(--grey);
+}
+
+.addRate input {
+    display: none;
+}
+
+.addRate label {
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.addRate input:checked~label {
+    color: var(--secondColor);
+}
+
+.addRate label:hover,
+.addRate label:hover~label {
+    color: var(--secondColor);
+}
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||            Banks          ||========================*/
+/*==========================||---------------------------||========================*/
+
+.banksBox {
+    max-width: 100%;
+    padding: 7%;
+}
+
+.bankBox {
+    border: 1px solid var(--grey);
+    box-shadow: 0px 0px 30px #B4B4B40A;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.bankLogo {
+    width: 120px;
+    height: 100px;
+    overflow: hidden;
+    padding-left: 20px;
+    border-left: 1px solid var(--grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bankLogo img {
+    border-radius: 50%;
+    max-height: 100%;
+}
+
+.bankInfo {
+    padding-right: 20px;
+}
+
+.bankInfo label {
+    margin: 0;
+    color: var(--textDark);
+    font: normal 17px/30px 'SST-Medium';
+}
+
+.bankInfo p {
+    color: var(--textLight);
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.bankInfo p:last-of-type {
+    margin: 0;
+}
+
+.banksBox .Btn {
+    max-width: 500px;
+    margin: 20px auto 0;
+}
+
+@media screen and (max-width:425px) {
+    .banksBox {
+        padding: 30px 10px;
+    }
+
+    .bankBox {
+        padding: 15px 10px;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .bankLogo {
+        border: 0;
+        padding: 0;
+        margin-bottom: 10px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .bankInfo p {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+
+    .bankInfo label {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:575px) and (max-width:768px) {
+    .banksBox {
+        padding: 30px 20px;
+    }
+
+    .bankBox {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .bankLogo {
+        width: 80px;
+        height: 70px;
+        padding-left: 10px;
+    }
+
+    .bankInfo {
+        padding-right: 10px;
+    }
+
+    .bankInfo p {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+
+    .bankInfo label {
+        font-size: 14px;
+    }
+}
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||         Upload File       ||========================*/
+/*==========================||---------------------------||========================*/
+
+.uploadFile {
+    padding: 10px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.uploadBtnBox {
+    width: 60px;
+    height: 55px;
+}
+
+.uploadBtnBox input {
+    display: none;
+}
+
+.uploadBtnBox label {
+    margin: 0;
+    cursor: pointer;
+}
+
+.fileName {
+    margin-bottom: 20px;
+    font: normal 14px/30px 'SST-Medium';
+}
+
+.coursesList {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fields {
+    width: calc(100% - 55px);
+}
+
+.addCourse {
+    background: var(--mainColor);
+    color: var(--white);
+    width: 43px;
+    height: 50px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 52px;
+    cursor: pointer;
+}
+
+.addCourse:hover {
+    background: var(--secondColor);
+}
+
+.newFields .field {
+    position: relative;
+}
+
+.deleteField {
+    background: var(--red);
+    color: var(--white);
+    width: 43px;
+    height: 50px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: -55px;
+}
+
+.deleteField:hover {
+    opacity: .7;
+}
+
+.resume {
+    position: relative;
+}
+
+.resume label {
+    font: normal 14px/20px 'SST-Medium';
+    color: var(--textMedium);
+    margin-bottom: 10px;
+}
+
+.resume .name {
+    height: 50px;
+    border-radius: 25px 0px 25px 25px;
+    background: var(--grey2) 0% 0% no-repeat padding-box;
+    font-size: 14px;
+    color: var(--textMedium);
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.resume .name .hint {
+    color: var(--grey3);
+}
+
+.uploadResume {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.uploadResume input {
+    display: none;
+}
+
+.uploadResume label {
+    margin: 0;
+    cursor: pointer;
+}
+
+.certifications {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 0 0;
+}
+
+.uploadcertification {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.uploadcertification input {
+    display: none;
+}
+
+.uploadcertification label {
+    margin: 0;
+    width: 72px;
+    height: 63px;
+    border-radius: 10px;
+    background: var(--grey2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.uploadcertification label:hover {
+    background: var(--secondColor);
+}
+
+.uploadcertification label:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.uploadcertification span {
+    font: normal 12px/16px 'SST-Medium';
+    color: var(--textMedium);
+    margin-top: 8px;
+}
+
+.certificationsList ul {
+    padding: 0;
+    list-style: none;
+}
+
+.certificationsList li {
+    display: flex;
+    font: normal 14px/20px 'SST-Medium';
+    margin-bottom: 12px;
+    align-items: center;
+}
+
+.certificationsList li i {
+    color: var(--mainColor);
+    margin-left: 5px;
+}
+
+/*==========================||---------------------------||========================*/
+/*==========================||      Lecturer Profile     ||========================*/
+/*==========================||---------------------------||========================*/
+
+.uploadLecture a {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.uploadLecture a img {
+    width: 18px;
+    margin: 0 0 0 10px;
 }

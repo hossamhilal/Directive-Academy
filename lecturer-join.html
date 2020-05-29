@@ -43,7 +43,7 @@
                     </div>
                     <div class="navMenu">
                         <ul>
-                            <li class="active">  <a href="index.html">   الرئيسية  </a> </li>
+                            <li>  <a href="index.html">   الرئيسية  </a> </li>
                             <li> <a href="about.html">  تعرف علينا   </a> </li>
                             <li> <a href="courses.html">  الدورات </a> </li>
                             <li> <a href="lecturers.html">   المحاضرين   </a> </li>
@@ -55,11 +55,11 @@
                     <div class="navOverlay"></div> 
                 </div>
                 <div class="pageInfo secPadding wow fadeInUp">
-                    <h1> تسجيل دخول </h1>
+                    <h1> انشاء حساب </h1>
                     <div class="bradCrumbBox"> 
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"> <a href="index.html"> الرئيسية </a> </li>
-                            <li class="breadcrumb-item active" aria-current="page">  تسجيل دخول </li>
+                            <li class="breadcrumb-item active" aria-current="page">  انشاء حساب</li>
                         </ol>
                     </div>
                 </div>
@@ -72,24 +72,66 @@
         <div class="container">
             <div class="pageFormBox">
                 <div class="pageFormHeader wow fadeInUp">
-                    <h1> تسجيل دخول </h1>
-                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
+                    <h1> إنشاء حساب جديد </h1>
+                    <p>  هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
                 </div>
                 <div class="pageFormBody wow fadeInUp">
-                    <form action="home-user.html">
+                    <form action="lecturer-profile.html">
                         <div class="field">
-                            <label> رقم الجوال </label>
+                            <label> الاسم  </label>
+                            <input type="text" placeholder="برجاء ادخال الاسم الاول">
+                        </div>
+                        <div class="field">
+                            <label> رقم الجوال  </label>
                             <input type="text" placeholder="برجاء ادخال رقم الجوال">
+                        </div>
+                        <div class="field">
+                            <label> البريد الالكترونى </label>
+                            <input type="email" placeholder="برجاء ادخال البريد الالكترونى">
+                        </div>
+                        <div class="coursesList">
+                            <div class="fields">
+                                <div class="field">
+                                    <label> الدورات المراد تقديمها </label>
+                                    <input type="text" placeholder="برجاء ادخال اسم الدورة" id="courseNameField">
+                                </div>
+                                <div class="newFields"></div>
+                            </div>
+                            <div class="addCourse"> <i class="icofont-plus"></i> </div>
+                        </div>
+                        <div class="resume">
+                            <label> السيرة الذاتيه </label>
+                            <div class="name"> <span class="hint">  برجاء ادخال السيرة الذاتيه  </span></div>
+                            <div class="uploadResume"> 
+                                <input type="file" id="resumeFile">
+                                <label for="resumeFile"> <img src="images/upload-2.png" alt="icon">  </label>    
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label> رابط لفيديو على اليوتيوب </label>
+                            <input type="text" placeholder="برجاء ادخال رابط لفيديو على اليوتيوب">
                         </div>
                         <div class="field">
                             <label> كلمة المرور </label>
                             <input type="password" placeholder="برجاء ادخال كلمة المرور">
                             <span class="showPassword"> <img src="images/eye.png" alt="icon"> </span>
                         </div>
-                        <button type="submit" class="Btn blueBtn animateBtn"> <span class="btnText"> تسجيل الدخول </span> <span class="btnHover"></span> </button>
+                        <div class="field">
+                            <label> كلمة المرور </label>
+                            <input type="password" placeholder="برجاء تأكيد كلمة المرور">
+                            <span class="showPassword"> <img src="images/eye.png" alt="icon"> </span>
+                        </div>
+                        <div class="certifications">
+                            <div class="certificationsList"> <ul></ul></div>
+                            <div class="uploadcertification">
+                                <input type="file" id="certificationsFile"  multiple="">
+                                <label for="certificationsFile"> <img src="images/upload-2.png" alt="icon">  </label>  
+                                <span> إرفاق الشهادات </span>          
+                            </div>
+                        </div>
+                        <button type="submit" class="Btn blueBtn animateBtn"> <span class="btnText"> إنشاء حساب </span> <span class="btnHover"></span> </button>
                         <div class="pageFormLinks">
-                            <a href="forget-password.html"> هل نسيت كلمة المرور ؟ </a>
-                            <p>  ليس لديك حساب ؟  <a href="signup.html"> إضغط هنا</a> </p>
+                            <p>  لديك حساب بالفعل ؟  <a href="login.html"> إضغط هنا</a> </p>
                         </div>
                     </form>
                 </div>

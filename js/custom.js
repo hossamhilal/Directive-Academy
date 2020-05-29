@@ -202,16 +202,6 @@
     $('.field textarea').focus(function(){
         $(this).parent('.field').addClass('focused');
     });
-    $('.field input').each(function() { 
-        if ($(this).val() != "") {
-            $(this).parent('.field').addClass('focused');   
-        }
-    });
-    $('.field textarea').each(function() { 
-        if ($(this).val() != "") {
-            $(this).parent('.field').addClass('focused');   
-        }
-    });
     $('.field input').focusout(function(){
         if($(this).val() === "")
         $(this).parent('.field').removeClass('focused');
@@ -231,6 +221,14 @@
         }
     });
 
+    // Allow Field Edit 
+    $('.editField').on('click' , function(){
+        let input = $(this).prev('input');
+        input.prop('disabled', function () {
+            return ! $(this).prop('disabled');
+        });
+    });
+
     // Show DropList
     $('.hasDropdown').on('click' , function(e){
         e.stopPropagation();
@@ -241,6 +239,102 @@
     $(document).on('click' , function(){
         $(this).find('.dropList').removeClass('show');
     });
+
+    // Upload Avatar 
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            let reader = new FileReader();
+            reader.onload = function(e) {
+                let Preview = $('.avatarUploadPreview');
+                let previewImage =  Preview.find('img');
+                let src = e.target.result;
+                Preview.hide();
+                previewImage.attr('src' , src );
+                Preview.fadeIn(650);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    $('#avatarUploadInput').change(function() {
+        readURL(this);
+    });
+
+    //  datepicker using icon
+    $('.calenderIcon').on('click' , function(){
+        $('.date').datepicker();
+    });
+
+    //  datepicker using Input
+    $('.date').datepicker();
+
+    //Accordion
+    $('.accordionHead').on('click' , function(){
+        if( $(this).parent('.accordion').hasClass('open')) {
+            $('.accordion').removeClass('open');
+        } else {
+            $('.accordion').removeClass('open');
+            $(this).parent('.accordion').addClass('open');
+        }
+    });
+
+    // Upload File 
+    $('.uploadBtnBox').on('click' , function(){
+        let input = $(this).find('input');
+        let FileName = $(this).prev('.fileName');
+        input.on('change', function(){
+            let file = input[0].files[0].name;
+            console.log (file);
+            FileName.text(file);
+        })
+    });
+
+    // Add Course 
+    $('.addCourse').on('click' , function(){
+        let field = '<div class="field">' +
+                        '<input type="text" placeholder="برجاء ادخال اسم الدورة">' +
+                        '<span class="deleteField"><i class="icofont-close-line"></i>' +
+                    '</div>' ;
+        $('.newFields').append(field);
+    });
+
+    // Delete Course Field
+    $(document).on('click' , '.deleteField' , function(){
+        $(this).parent('.field').remove();
+    });
+
+    // Upload Resume 
+    $('.uploadResume').on('click' , function(){
+        let input = $(this).find('input');
+        let FileName = $(this).prev('.name');
+        input.on('change', function(){
+            let file = input[0].files[0].name;
+            FileName.text(file);
+        })
+    });
+
+    // Upload Certifications 
+    $('.uploadcertification').on('click' , function(){
+        let input = $(this).find('input');
+        let list = $(this).prev('.certificationsList').find('ul');
+
+        input.on('change', function() {
+            let files = input[0].files;
+            let totalFiles = files.length
+            if (list.length > 0) {
+                list.empty();
+            }
+            for(let i = 0; i < totalFiles; i++) {
+                let li = document.createElement('li');
+                li.innerHTML = '<i class="icofont-ui-file"></i>' + input[0].files[i].name;
+                list.append(li);
+            }
+        });
+    });
+           
+    
+
+                                
+    
 
     // iniat WOW Js
     new WOW().init();

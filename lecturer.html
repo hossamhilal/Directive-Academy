@@ -48,10 +48,10 @@
                     </div>
                     <div class="navMenu">
                         <ul>
-                            <li class="active">  <a href="index.html">   الرئيسية  </a> </li>
+                            <li>  <a href="index.html">   الرئيسية  </a> </li>
                             <li> <a href="about.html">  تعرف علينا   </a> </li>
                             <li> <a href="courses.html">  الدورات </a> </li>
-                            <li> <a href="lecturers.html">   المحاضرين   </a> </li>
+                            <li class="active"> <a href="lecturers.html">   المحاضرين   </a> </li>
                             <li> <a href="blogs.html"> المدونة </a> </li>
                             <li> <a href="contact.html">  تواصل معنا </a> </li>  
                         </ul>
@@ -60,11 +60,12 @@
                     <div class="navOverlay"></div> 
                 </div>
                 <div class="pageInfo secPadding wow fadeInUp">
-                    <h1> الملف الشخصى </h1>
+                    <h1> تفاصيل المحاضر </h1>
                     <div class="bradCrumbBox"> 
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"> <a href="index.html"> الرئيسية </a> </li>
-                            <li class="breadcrumb-item active" aria-current="page">  الملف الشخصى </li>
+                            <li class="breadcrumb-item"> <a href="lecturers.html"> المحاضرين </a> </li>
+                            <li class="breadcrumb-item active" aria-current="page">  تفاصيل المحاضر </li>
                         </ol>
                     </div>
                 </div>     
@@ -72,37 +73,43 @@
         </div>
     </div>
 
-    <!-- Profile Page -->
-    <div class="profilePage secPadding">
+    <!-- Lecturers Page -->
+    <div class="lecturersPage secPadding">
         <div class="container">
-            <!-- Profile Info  -->
-            <div class="profileInfo wow fadeInUp">
-                <div class="infoWrapper">
+            <!-- Lecturer Info  -->
+            <div class="lecturerInfo profileInfo wow fadeInUp">
+                <a class="infoWrapper" href="lecturer.html">
                     <div class="infoWrapperHead">
-                        <h1> المعلومات الشخصية </h1>
-                        <div class="link"> <a href="user-profile-edit.html"> تعديل البيانات </a></div>
+                        <h1> عن المحاضر  </h1>
                     </div>
                     <div class="infoWrapperBody">
                         <div class="profileCard">
                             <div class="profileCardAvatar"> <img src="images/avatar-2.png" alt="Avatar" class="img-fluid w-100"> </div>
                             <div class="profileCardData">
-                                <h2> حسام هلال </h2>
+                                <div class="lecturerHead">
+                                    <h2> حسام هلال  </h2>
+                                    <ul class="rate">
+                                        <li> <i class="icofont-star orange"></i> </li>
+                                        <li> <i class="icofont-star orange"></i> </li>
+                                        <li> <i class="icofont-star orange"></i> </li>
+                                        <li> <i class="icofont-star orange"></i> </li>
+                                        <li> <i class="icofont-star"></i> </li>
+                                    </ul>
+                                </div>
                                 <h3> مبرمج </h3>
-                                <p> <img src="images/icon-20.png" alt="icon"> ذكر </p>
-                                <p> <img src="images/icon-21.png" alt="icon"> 1994/1/14 </p>
-                                <p> <img src="images/icon-22.png" alt="icon"> تعليم جامعى </p>
-                                <p> <img src="images/icon-23.png" alt="icon"> الرياض - المملكة العربية السعودية </p>
                             </div>
                         </div>
+                        <div class="lecturerDescription">
+                            <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>  
-        
             <!-- Profile Courses  -->
-            <div class="profileCourses wow fadeInUp">
+            <div class="profileCourses wow fadeInUp">              
                 <div class="infoWrapper">
                     <div class="infoWrapperHead">
-                        <h1> أقوم بدراسة </h1>
+                        <h1> أقوم بتدريس </h1>
                     </div>
                     <div class="infoWrapperBody">
                         <div class="row">
@@ -332,107 +339,6 @@
                     </div>
                 </div>
             </div> 
-
-            <!-- Profile Pervious Courses  -->
-            <div class="profilePervCourses wow fadeInUp">
-                <div class="infoWrapper">
-                    <div class="infoWrapperHead">
-                        <h1> سبق لى دراسة </h1>
-                    </div>
-                    <div class="infoWrapperBody">
-                        <div class="customTable">
-                            <div class="customTableRow">
-                                <div class="rowHead">
-                                    <div> إسم الدورة </div>
-                                    <div> مواعيد الدورة </div>
-                                    <div> إجمالي عدد المحاضرات </div>
-                                    <div> المحاضر  </div>
-                                    <div> الشهادة </div>
-                                </div>
-                                <div class="rowBody">
-                                    <div> برمجة المواقع الالكترونية </div>
-                                    <div> 10 إبريل </div>
-                                    <div> 10 </div>
-                                    <div> حسام هلال </div>
-                                    <div> 
-                                        <div class="tableActions">
-                                            <a href="#"> <img src="images/icon-24.png" alt="icon"> <span> طباعة </span></a>
-                                            <div class="seprate"></div>
-                                            <a href="#"> <img src="images/icon-25.png" alt="icon"> <span> ارسال للايميل </span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="customTableRow">
-                                <div class="rowHead">
-                                    <div> إسم الدورة </div>
-                                    <div> مواعيد الدورة </div>
-                                    <div> إجمالي عدد المحاضرات </div>
-                                    <div> المحاضر  </div>
-                                    <div> الشهادة </div>
-                                </div>
-                                <div class="rowBody">
-                                    <div> برمجة المواقع الالكترونية </div>
-                                    <div> 10 إبريل </div>
-                                    <div> 10 </div>
-                                    <div> حسام هلال </div>
-                                    <div> 
-                                        <div class="tableActions">
-                                            <a href="#"> <img src="images/icon-24.png" alt="icon"> <span> طباعة </span></a>
-                                            <div class="seprate"></div>
-                                            <a href="#"> <img src="images/icon-25.png" alt="icon"> <span> ارسال للايميل </span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="customTableRow">
-                                <div class="rowHead">
-                                    <div> إسم الدورة </div>
-                                    <div> مواعيد الدورة </div>
-                                    <div> إجمالي عدد المحاضرات </div>
-                                    <div> المحاضر  </div>
-                                    <div> الشهادة </div>
-                                </div>
-                                <div class="rowBody">
-                                    <div> برمجة المواقع الالكترونية </div>
-                                    <div> 10 إبريل </div>
-                                    <div> 10 </div>
-                                    <div> حسام هلال </div>
-                                    <div> 
-                                        <div class="tableActions">
-                                            <a href="#"> <img src="images/icon-24.png" alt="icon"> <span> طباعة </span></a>
-                                            <div class="seprate"></div>
-                                            <a href="#"> <img src="images/icon-25.png" alt="icon"> <span> ارسال للايميل </span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="customTableRow">
-                                <div class="rowHead">
-                                    <div> إسم الدورة </div>
-                                    <div> مواعيد الدورة </div>
-                                    <div> إجمالي عدد المحاضرات </div>
-                                    <div> المحاضر  </div>
-                                    <div> الشهادة </div>
-                                </div>
-                                <div class="rowBody">
-                                    <div> برمجة المواقع الالكترونية </div>
-                                    <div> 10 إبريل </div>
-                                    <div> 10 </div>
-                                    <div> حسام هلال </div>
-                                    <div> 
-                                        <div class="tableActions">
-                                            <a href="#"> <img src="images/icon-24.png" alt="icon"> <span> طباعة </span></a>
-                                            <div class="seprate"></div>
-                                            <a href="#"> <img src="images/icon-25.png" alt="icon"> <span> ارسال للايميل </span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>  
         </div>
     </div>
 

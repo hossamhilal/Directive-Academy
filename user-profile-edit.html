@@ -28,9 +28,14 @@
                         <a href="lecturer-join.html"> <img src="images/icon-1.png" alt="icon" class="img-fluid"> <span class="linkText"> انضم إلينا كمحاضر </span> </a>
                     </div>
                     <div class="headerTopLeft">
-                        <a href="signup.html"> <img src="images/icon-2.png" alt="icon" class="img-fluid"> <span class="linkText"> سجل الان  </span> </a>
-                        <a href="login.html"> <img src="images/icon-3.png" alt="icon" class="img-fluid"> <span class="linkText"> دخول  </span> </a>
-                        <a href="company-signup.html"> <img src="images/icon-4.png" alt="icon" class="img-fluid"> <span class="linkText"> تسجيل الشركات  </span> </a>
+                        <div href="signup.html" class="hasDropdown"> 
+                            <img src="images/icon-2.png" alt="icon" class="img-fluid"> <span class="linkText"> حسابى </span> 
+                            <div class="dropList">
+                                <a href="user-profile.html"> <img src="images/icon-17.png" alt="icon" class="img-fluid"> الملف الشخصى </a>
+                                <a href="user-setting.html"> <img src="images/icon-18.png" alt="icon" class="img-fluid"> إعدادات الحساب </a>
+                                <a href="index.html"> <img src="images/icon-19.png" alt="icon" class="img-fluid"> تسجيل الخروج </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -55,42 +60,124 @@
                     <div class="navOverlay"></div> 
                 </div>
                 <div class="pageInfo secPadding wow fadeInUp">
-                    <h1> تسجيل دخول </h1>
+                    <h1> إعدادات الحساب </h1>
                     <div class="bradCrumbBox"> 
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"> <a href="index.html"> الرئيسية </a> </li>
-                            <li class="breadcrumb-item active" aria-current="page">  تسجيل دخول </li>
+                            <li class="breadcrumb-item active" aria-current="page">  إعدادات الحساب </li>
                         </ol>
                     </div>
-                </div>
+                </div>     
             </div>
         </div>
     </div>
 
-    <!-- Page Form  -->
-    <div class="pageForm secPadding">
+    <!-- Profile Setting -->
+    <div class="pageForm profileSetting secPadding">
         <div class="container">
             <div class="pageFormBox">
                 <div class="pageFormHeader wow fadeInUp">
-                    <h1> تسجيل دخول </h1>
+                    <h1> إعدادات الحساب </h1>
                     <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
                 </div>
                 <div class="pageFormBody wow fadeInUp">
-                    <form action="home-user.html">
-                        <div class="field">
-                            <label> رقم الجوال </label>
-                            <input type="text" placeholder="برجاء ادخال رقم الجوال">
+                    <form action="user-profile.html">
+                        <div class="avatarUpload">
+                            <div class="avatarUploadBtn">
+                                <input type='file' id="avatarUploadInput" accept=".png, .jpg, .jpeg" />
+                                <label for="avatarUploadInput"> <img src="images/camera.png" alt="icon" class="img-fluid w-100">  </label>
+                            </div>
+                            <div class="avatarUploadPreview">
+                                <img src="images/avatar-2.png" alt="avatar" class="img-fluid w-100">
+                            </div>
+                        </div>
+                        <div class="flexField">
+                            <div class="field">
+                                <label> الاسم الاول </label>
+                                <input type="text" value="Hossam" placeholder="برجاء ادخال الاسم الاول" disabled>
+                                <span class="editField"> <img src="images/edit.png" alt="icon"> </span>
+                            </div>
+                            <div class="field">
+                                <label> الاسم الاخير </label>
+                                <input type="text" value="Hilal" placeholder="برجاء ادخال الاسم الاخير" disabled>
+                                <span class="editField"> <img src="images/edit.png" alt="icon"> </span>
+                            </div>
                         </div>
                         <div class="field">
-                            <label> كلمة المرور </label>
-                            <input type="password" placeholder="برجاء ادخال كلمة المرور">
-                            <span class="showPassword"> <img src="images/eye.png" alt="icon"> </span>
+                            <label> البريد الالكترونى </label>
+                            <input type="email" value="Hossam.Hilal0@gmail.com" placeholder="برجاء ادخال البريد الالكترونى" disabled>
+                            <span class="editField"> <img src="images/edit.png" alt="icon"> </span>
                         </div>
-                        <button type="submit" class="Btn blueBtn animateBtn"> <span class="btnText"> تسجيل الدخول </span> <span class="btnHover"></span> </button>
-                        <div class="pageFormLinks">
-                            <a href="forget-password.html"> هل نسيت كلمة المرور ؟ </a>
-                            <p>  ليس لديك حساب ؟  <a href="signup.html"> إضغط هنا</a> </p>
+                        <div class="field">
+                            <label> رقم الجوال  </label>
+                            <input type="text" value="+966549782553" placeholder="برجاء ادخال رقم الجوال " disabled>
+                            <span class="editField"> <img src="images/edit.png" alt="icon"> </span>
                         </div>
+                        <div class="field">
+                            <label> الاسم كما تحب أن يظهر في الشهادة </label>
+                            <input type="text" value="Hossam Hilal" placeholder="برجاء ادخال الاسم الذى يظهر في الشهادة">
+                            <span class="editField"> <img src="images/edit.png" alt="icon"> </span>
+                        </div>
+                        <div class="field">
+                            <label> المهنـة </label>
+                            <input type="text" value="Frontend Developer" placeholder="المهنـة">
+                            <span class="editField"> <img src="images/edit.png" alt="icon"> </span>
+                        </div>
+                        <div class="field">
+                            <label> المستوى التعليمى </label>
+                            <div class="customSelectBox">
+                                <select>
+                                    <option selected> برجاء ادخال المستوى التعليمى </option>
+                                    <option value="1">  1 مستوى </option>
+                                    <option value="2"> مستوى 2 </option>
+                                    <option value="3"> مستوى 3 </option>
+                                    <option value="4"> مستوى 4 </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flexField">
+                            <div class="field">
+                                <label> الدولة </label>
+                                <div class="customSelectBox">
+                                    <select>
+                                        <option selected> برجاء ادخال الدولة </option>
+                                        <option value="1">  1 الدولة </option>
+                                        <option value="2"> الدولة 2 </option>
+                                        <option value="3"> الدولة 3 </option>
+                                        <option value="4"> الدولة 4 </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label> المدينة </label>
+                                <div class="customSelectBox">
+                                    <select>
+                                        <option value="1">   المدينة </option>
+                                        <option value="2"> المدينة 2 </option>
+                                        <option value="3"> المدينة 3 </option>
+                                        <option value="4"> المدينة 4 </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flexField">
+                            <div class="field">
+                                <label> النوع </label>
+                                <div class="customSelectBox">
+                                    <select>
+                                        <option value="1"> ذكر   </option>
+                                        <option value="2">  انثى </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label> تاريخ الميلاد </label>
+                                <input type="text" name="date" class="date" id="date" value="05/06/2020">
+                                <label for="date" class="calenderIcon"> <img src="images/calender.png" alt="icon"> </label>
+                            </div>
+                        </div>
+                        <a href="chang-password.html" class="Btn darkBtn animateBtn"> <span class="btnText"> تغيير كلمة المرور </span> <span class="btnHover"></span> </a>
+                        <button type="submit" class="Btn blueBtn animateBtn"> <span class="btnText"> حفظ التعديلات </span> <span class="btnHover"></span> </button>
                     </form>
                 </div>
             </div>
@@ -152,7 +239,7 @@
         <div class="container">
             <div class="footer-box wow fadeInUp">
                 <div class="row">
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-lg-30">
+                    <div class="col-12 col-sm-6 col-lg-4 col-lg-3 col-lg-30">
                         <div class="footerInfo">
                             <div class="footerLogo"> <img src="images/logo.png" alt="logo" class="img-fluid"> </div>
                             <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى</p>
@@ -163,7 +250,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-lg-40">
+                    <div class="col-12 col-sm-6 col-lg-4 col-lg-6 col-lg-40">
                         <div class="footerLinks">
                             <div class="footerLinksBox">
                                 <div class="footerLinksTitle"> روابط سريعة </div>
@@ -185,7 +272,7 @@
                             </div>  
                         </div>       
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-lg-30">
+                    <div class="col-12 col-sm-6 col-lg-4 col-lg-3 col-lg-30">
                         <div class="contact-form">
                             <div class="footerLinksTitle"> تواصل معنا </div>
                             <form action="">
@@ -223,13 +310,13 @@
         </div>
     </div>
 
-   <!-- JS -->
-   <script src="js/jquery-3.2.1.min.js"></script>
-   <script src="plugins/jqueryUi/jquery-ui.min.js"></script>
-   <script src="js/popper.min.js"></script>
-   <script src="js/bootstrap.min.js"></script>
-   <script src="plugins/owlCarousel/owl.carousel.min.js"></script>
-   <script src="plugins/animation/wow.min.js"></script>
-   <script src="js/custom.js"></script>
+    <!-- JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="plugins/jqueryUi/jquery-ui.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugins/owlCarousel/owl.carousel.min.js"></script>
+    <script src="plugins/animation/wow.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 </html>
