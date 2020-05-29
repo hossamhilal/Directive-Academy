@@ -60,11 +60,11 @@
                     <div class="navOverlay"></div> 
                 </div>
                 <div class="pageInfo secPadding wow fadeInUp">
-                    <h1> الملف الشخصى </h1>
+                    <h1> إعدادات الحساب </h1>
                     <div class="bradCrumbBox"> 
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"> <a href="index.html"> الرئيسية </a> </li>
-                            <li class="breadcrumb-item active" aria-current="page">  الملف الشخصى </li>
+                            <li class="breadcrumb-item active" aria-current="page">  إعدادات الحساب </li>
                         </ol>
                     </div>
                 </div>     
@@ -72,65 +72,47 @@
         </div>
     </div>
 
-    <!-- Profile Page -->
-    <div class="profilePage secPadding">
+    <!-- Profile Setting -->
+    <div class="pageForm profileSetting secPadding">
         <div class="container">
-            <!-- Profile Info  -->
-            <div class="profileInfo wow fadeInUp">
-                <div class="infoWrapper">
-                    <div class="infoWrapperHead">
-                        <h1> المعلومات الشخصية </h1>
-                        <div class="link"> <a href="lecturer-profile-edit.html"> تعديل البيانات </a></div>
-                    </div>
-                    <div class="infoWrapperBody">
-                        <div class="profileCard">
-                            <div class="profileCardAvatar"> <img src="images/avatar-2.png" alt="Avatar" class="img-fluid w-100"> </div>
-                            <div class="profileCardData">
-                                <h2> حسام هلال </h2>
-                                <h3> مبرمج </h3>
+            <div class="pageFormBox">
+                <div class="pageFormHeader wow fadeInUp">
+                    <h1> إعدادات الحساب </h1>
+                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
+                </div>
+                <div class="pageFormBody wow fadeInUp">
+                    <form action="lecturer-profile.html">
+                        <div class="avatarUpload">
+                            <div class="avatarUploadBtn">
+                                <input type='file' id="avatarUploadInput" accept=".png, .jpg, .jpeg" />
+                                <label for="avatarUploadInput"> <img src="images/camera.png" alt="icon" class="img-fluid w-100">  </label>
+                            </div>
+                            <div class="avatarUploadPreview">
+                                <img src="images/avatar-2.png" alt="avatar" class="img-fluid w-100">
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>  
-
-            <!-- Profile Pervious Courses  -->
-            <div class="profilePervCourses wow fadeInUp">
-                <div class="infoWrapper">
-                    <div class="infoWrapperHead">
-                        <h1> الدورات التي أقوم بتدريبها </h1>
-                        <div class="link"> <span class="uploadCourse"><i class="icofont-plus"></i> دورة جديدة   </span> </div>
-                    </div>
-                    <div class="infoWrapperBody">
-                        <div class="customTable">
-                            <div class="customTableRow">
-                                <div class="rowHead">
-                                    <div> إسم الدورة </div>
-                                    <div> مواعيد الدورة </div>
-                                    <div> إجمالي عدد المحاضرات </div>
-                                    <div> محاضرات تمت  </div>
-                                    <div> محاضرات قادمة </div>
-                                    <div> رفع المحاضرة </div>
-                                </div>
-                                <div class="rowBody">
-                                    <div> برمجة المواقع الالكترونية </div>
-                                    <div> 10 إبريل </div>
-                                    <div> 10 </div>
-                                    <div> برمجة التطبيقات </div>
-                                    <div> برمجة التطبيقات </div>
-                                    <div> 
-                                        <div class="tableActions uploadLecture">
-                                            <a href="#"> <img src="images/upload-2.png" alt="icon"> <span> رفع المحاضرة </span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="field">
+                            <label> الاسم  </label>
+                            <input type="text" value="Hossam" placeholder="برجاء ادخال الاسم " disabled>
+                            <span class="editField"> <img src="images/edit.png" alt="icon"> </span>
                         </div>
-                    </div>
+                        <div class="field">
+                            <label> رقم الجوال  </label>
+                            <input type="text" value="+966549782553" placeholder="برجاء ادخال رقم الجوال " disabled>
+                            <span class="editField"> <img src="images/edit.png" alt="icon"> </span>
+                        </div>
+                        <div class="field">
+                            <label> البريد الالكترونى </label>
+                            <input type="email" value="Hossam.Hilal0@gmail.com" placeholder="برجاء ادخال البريد الالكترونى" disabled>
+                            <span class="editField"> <img src="images/edit.png" alt="icon"> </span>
+                        </div>
+                        <a href="chang-password.html" class="Btn darkBtn animateBtn"> <span class="btnText"> تغيير كلمة المرور </span> <span class="btnHover"></span> </a>
+                        <button type="submit" class="Btn blueBtn animateBtn"> <span class="btnText"> حفظ التعديلات </span> <span class="btnHover"></span> </button>
+                    </form>
                 </div>
-            </div>  
+            </div>
         </div>
-    </div>
+    </div>  
 
     <!-- Partners -->
     <div class="partners">
