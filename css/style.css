@@ -3108,7 +3108,7 @@ button:focus {
     padding: 8px;
 }
 
-.coursesBox .tabsList {
+.coursesPage .coursesBox .tabsList {
     justify-content: flex-start;
     margin-bottom: 30px;
 }
