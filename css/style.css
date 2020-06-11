@@ -48,6 +48,7 @@
     --border2: 1px solid var(--greyMedium);
     --border3: 1px solid var(--blue);
     --border4: 1px solid var(--greyLight);
+    --border5: 1px solid #E9EDF0;
 }
 
 /* fonts*/
@@ -2629,7 +2630,6 @@ button:focus {
 }
 
 @media (min-width:768px) and (max-width:1024px) {
-
     .rowHead>div,
     .rowBody>div {
         padding: 5px;
@@ -3904,17 +3904,51 @@ button:focus {
 /*==========================||      Lecturer Profile     ||========================*/
 /*==========================||---------------------------||========================*/
 
-.uploadLecture a {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.tableLink {
+    color: var(--text);
+    font: inherit;
 }
 
-.uploadLecture a img {
-    width: 18px;
-    margin: 0 0 0 10px;
+.tableLink:hover {
+    color: var(--secondColor);
 }
 
+.lecturerCourse .field textarea {
+    border: var(--border5);
+}
+
+.lecturerCourse .coursePageInfo {
+    margin-bottom: 40px;
+}
+
+.lecturerCourse .fields {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.lecturerCourse form .animateBtn {
+    max-width: 400px;
+    margin: auto;
+}
+
+.redBtn {
+    background: var(--redDark);
+    color: var(--white);
+}
+
+.redBtn .btnHover {
+    background: var(--redDark);
+    opacity : 0.2;
+}
+
+@media (min-width:768px) {
+    .lecturesTable .rowHead>div:first-of-type, 
+    .lecturesTable .rowBody>div:first-of-type {
+        width: 80%;
+        padding :0 5%;
+        text-align: right;
+    }
+}
 
 /*==========================||---------------------------||========================*/
 /*==========================||         SUCCESS PAGE      ||========================*/

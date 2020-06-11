@@ -48,7 +48,7 @@
                     </div>
                     <div class="navMenu">
                         <ul>
-                            <li class="active">  <a href="index.html">   الرئيسية  </a> </li>
+                            <li>  <a href="index.html">   الرئيسية  </a> </li>
                             <li> <a href="about.html">  تعرف علينا   </a> </li>
                             <li> <a href="courses.html">  الدورات </a> </li>
                             <li> <a href="lecturers.html">   المحاضرين   </a> </li>
@@ -72,158 +72,201 @@
         </div>
     </div>
 
-    <!-- Profile Page -->
-    <div class="profilePage secPadding">
+    <!-- Course Page  -->
+    <div class="coursePage secPadding pageFormBody lecturerCourse">
         <div class="container">
-            <!-- Profile Info  -->
-            <div class="profileInfo wow fadeInUp">
-                <div class="infoWrapper">
-                    <div class="infoWrapperHead">
-                        <h1> المعلومات الشخصية </h1>
-                        <div class="link"> <a href="lecturer-profile-edit.html"> تعديل البيانات </a></div>
-                    </div>
-                    <div class="infoWrapperBody">
-                        <div class="profileCard">
-                            <div class="profileCardAvatar"> <img src="images/avatar-2.png" alt="Avatar" class="img-fluid w-100"> </div>
-                            <div class="profileCardData">
-                                <h2> حسام هلال </h2>
-                                <h3> مبرمج </h3>
-                            </div>
-                        </div>
+            <div class="courseIntoVideo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Dv7gLpW91DM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="coursePageInfo">
+                <div class="head">
+                    <h1> كورس لتعليم برمجه الجوال </h1>
+                    <a href="bank.html"  class="Btn redBtn animateBtn"> <span class="btnHover"></span> <span class="btnText"> حذف الدورة </span> </a>
+                </div>
+                <div class="courseTime">
+                    <p> 
+                        <span> <img src="images/icon-29.png" alt="icon"> اللغة العربية </span> 
+                        <span> <img src="images/icon-6.png" alt="icon"> 25 / 4 / 2020 </span>
+                    </p>
+                </div>
+                <div class="share">
+                    <label> : مشاركة </label>
+                    <div class="list">
+                        <a href="#"> <img src="images/share-1.png" alt="icon"></a>
+                        <a href="#"> <img src="images/share-2.png" alt="icon"></a>
+                        <a href="#"> <img src="images/share-3.png" alt="icon"></a>
+                        <a href="#"> <img src="images/share-4.png" alt="icon"></a>
                     </div>
                 </div>
-            </div>  
-
-            <!-- Profile Pervious Courses  -->
-            <div class="profilePervCourses wow fadeInUp">
+            </div>
+            <form action="">
+                <div class="fields">       
+                    <div class="field textarea-field">
+                        <label> نبذة عن الدورة  </label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="field textarea-field">
+                        <label> ستتعلم في هذه الدورة </label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="field textarea-field">
+                        <label> المستفيدين من الدورة </label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="field textarea-field">
+                        <label> مخرجات الدورة </label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="field textarea-field">
+                        <label> الشهادات المقدمة </label>
+                        <textarea></textarea>
+                    </div>
+                </div>
                 <div class="infoWrapper">
                     <div class="infoWrapperHead">
-                        <h1> الدورات التي أقوم بتدريبها </h1>
-                        <div class="link"> <span class="uploadCourse showCenterPopup"><i class="icofont-plus"></i> دورة جديدة   </span> </div>
+                        <h1> الفصول </h1>
+                        <div class="link"> <span class="uploadCourse togglePopup" data-id="addClass"><i class="icofont-plus"></i> إضافة فصل  </span> </div>
                     </div>
                     <div class="infoWrapperBody">
-                        <div class="customTable">
+                        <div class="customTable lecturesTable">
                             <div class="customTableRow">
                                 <div class="rowHead">
-                                    <div> إسم الدورة </div>
-                                    <div> مواعيد الدورة </div>
-                                    <div> إجمالي عدد المحاضرات </div>
-                                    <div> محاضرات تمت  </div>
-                                    <div> محاضرات قادمة </div>
-                                    <div> تفاصيل الدورة </div>
+                                    <div> اسم الفصل </div>
+                                    <div> عدد المحاضرات </div>
                                 </div>
                                 <div class="rowBody">
-                                    <div> برمجة المواقع الالكترونية </div>
-                                    <div> 10 إبريل </div>
+                                    <div> الفصل الاول </div>
                                     <div> 10 </div>
-                                    <div> برمجة التطبيقات </div>
-                                    <div> برمجة التطبيقات </div>
-                                    <div> 
-                                        <a href="course-lecturer.html" class="tableLink"> تفاصيل الدورة </a>
-                                    </div>
                                 </div>
                             </div>
                             <div class="customTableRow">
                                 <div class="rowHead">
-                                    <div> إسم الدورة </div>
-                                    <div> مواعيد الدورة </div>
-                                    <div> إجمالي عدد المحاضرات </div>
-                                    <div> محاضرات تمت  </div>
-                                    <div> محاضرات قادمة </div>
-                                    <div> تفاصيل الدورة </div>
+                                    <div> اسم الفصل </div>
+                                    <div> عدد المحاضرات </div>
                                 </div>
                                 <div class="rowBody">
-                                    <div> برمجة المواقع الالكترونية </div>
-                                    <div> 10 إبريل </div>
+                                    <div> الفصل التانى </div>
                                     <div> 10 </div>
-                                    <div> برمجة التطبيقات </div>
-                                    <div> برمجة التطبيقات </div>
-                                    <div> 
-                                        <a href="course-lecturer.html" class="tableLink"> تفاصيل الدورة </a>
-                                    </div>
                                 </div>
                             </div>
                             <div class="customTableRow">
                                 <div class="rowHead">
-                                    <div> إسم الدورة </div>
-                                    <div> مواعيد الدورة </div>
-                                    <div> إجمالي عدد المحاضرات </div>
-                                    <div> محاضرات تمت  </div>
-                                    <div> محاضرات قادمة </div>
-                                    <div> تفاصيل الدورة </div>
+                                    <div> اسم الفصل </div>
+                                    <div> عدد المحاضرات </div>
                                 </div>
                                 <div class="rowBody">
-                                    <div> برمجة المواقع الالكترونية </div>
-                                    <div> 10 إبريل </div>
+                                    <div> الفصل الثالث </div>
                                     <div> 10 </div>
-                                    <div> برمجة التطبيقات </div>
-                                    <div> برمجة التطبيقات </div>
-                                    <div> 
-                                        <a href="course-lecturer.html" class="tableLink"> تفاصيل الدورة </a>
-                                    </div>
                                 </div>
                             </div>
                             <div class="customTableRow">
                                 <div class="rowHead">
-                                    <div> إسم الدورة </div>
-                                    <div> مواعيد الدورة </div>
-                                    <div> إجمالي عدد المحاضرات </div>
-                                    <div> محاضرات تمت  </div>
-                                    <div> محاضرات قادمة </div>
-                                    <div> تفاصيل الدورة </div>
+                                    <div> اسم الفصل </div>
+                                    <div> عدد المحاضرات </div>
                                 </div>
                                 <div class="rowBody">
-                                    <div> برمجة المواقع الالكترونية </div>
-                                    <div> 10 إبريل </div>
+                                    <div> الفصل الثالث </div>
                                     <div> 10 </div>
-                                    <div> برمجة التطبيقات </div>
-                                    <div> برمجة التطبيقات </div>
-                                    <div> 
-                                        <a href="course-lecturer.html" class="tableLink"> تفاصيل الدورة </a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>  
+                <div class="infoWrapper">
+                    <div class="infoWrapperHead">
+                        <h1> المحاضرات </h1>
+                        <div class="link"> <span class="uploadCourse togglePopup" data-id="addLecture"><i class="icofont-plus"></i>  إضافة محاضرة </span> </div>
+                    </div>
+                    <div class="infoWrapperBody">
+                        <div class="customTable lecturesTable">
+                            <div class="customTableRow">
+                                <div class="rowHead">
+                                    <div> اسم المحاضرة </div>
+                                    <div> الفصل التابع ليه </div>
+                                </div>
+                                <div class="rowBody">
+                                    <div> هذا النص هو مثال لنص يمكن ان يستبدل بنص اخر </div>
+                                    <div> الفصل الاول </div>
+                                </div>
+                            </div>
+                            <div class="customTableRow">
+                                <div class="rowHead">
+                                    <div> اسم المحاضرة </div>
+                                    <div> الفصل التابع ليه </div>
+                                </div>
+                                <div class="rowBody">
+                                    <div> هذا النص هو مثال لنص يمكن ان يستبدل بنص اخر </div>
+                                    <div> الفصل التانى </div>
+                                </div>
+                            </div>
+                            <div class="customTableRow">
+                                <div class="rowHead">
+                                    <div> اسم المحاضرة </div>
+                                    <div> الفصل التابع ليه </div>
+                                </div>
+                                <div class="rowBody">
+                                    <div> هذا النص هو مثال لنص يمكن ان يستبدل بنص اخر </div>
+                                    <div> الفصل الثالث </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="Btn blueBtn animateBtn"> <span class="btnText">تاكيد </span> <span class="btnHover"></span> </button>
+            </form>
         </div>
-    </div>
+    </div> 
 
     <!-- Popup  -->
-    <div class="centerPopup">
+    <div class="centerPopup" id="addClass">
         <div class="centerPopupContent">
             <div class="pageForm">
                 <div class="pageFormBox">
                     <div class="pageFormHeader">
-                        <h1> إضافة دورة جديدة </h1>
+                        <h1> إضافة فصل </h1>
                         <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
                     </div>
                     <div class="pageFormBody">
-                        <form action="success.html">
+                        <form action="course-lecturer.html">
                             <div class="field">
-                                <label> اختر القسم</label>
+                                <label> اسم الفصل </label>
+                                <input type="text" placeholder="برجاء اسم الفصل">
+                            </div>
+                            <button type="submit" class="Btn blueBtn animateBtn"> <span class="btnText">تأكيد</span> <span class="btnHover"></span> </button>
+                        </form>
+                    </div>
+                </div>           
+            </div>      
+        </div>
+        <div class="overlay"></div>
+    </div>
+
+    <!-- Popup  -->
+    <div class="centerPopup" id="addLecture">
+        <div class="centerPopupContent">
+            <div class="pageForm">
+                <div class="pageFormBox">
+                    <div class="pageFormHeader">
+                        <h1> إضافة محاضرة </h1>
+                        <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
+                    </div>
+                    <div class="pageFormBody">
+                        <form action="course-lecturer.html">
+                            <div class="field">
+                                <label> اسم المحاضرة  </label>
+                                <input type="text" placeholder="برجاء اسم المحاضرة">
+                            </div>
+                            <div class="field">
+                                <label> عنوان الفصل </label>
                                 <div class="customSelectBox">
                                     <select>
-                                        <option selected> برجاء اختر القسم </option>
-                                        <option value="1">  1 القسم </option>
-                                        <option value="2"> القسم 2 </option>
-                                        <option value="3"> القسم 3 </option>
-                                        <option value="4"> القسم 4 </option>
+                                        <option selected> برجاء اختر عنوان الفصل </option>
+                                        <option value="1">  1 الفصل </option>
+                                        <option value="2"> الفصل 2 </option>
+                                        <option value="3"> الفصل 3 </option>
+                                        <option value="4"> الفصل 4 </option>
                                     </select>
                                 </div>
-                            </div>
-                            <div class="field">
-                                <label> اسم الدورة  </label>
-                                <input type="text" placeholder="برجاء ادخال الاسم">
-                            </div>
-                            <div class="field">
-                                <label> معاد الدورة </label>
-                                <input type="text" placeholder="برجاء ادخال معاد الدورة">
-                            </div>
-                            <div class="field">
-                                <label> تكلفة الدورة </label>
-                                <input type="text" placeholder="برجاء ادخال تكلفة الدورة">
                             </div>
                             <div class="certifications">
                                 <div class="certificationsList"> <ul></ul></div>

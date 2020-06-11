@@ -342,6 +342,14 @@
         $('.centerPopup').removeClass('show');
         $('body').removeClass('stopScroll');
     });
+
+
+    // Dynamic Popup
+    $('.togglePopup').on('click' , function(){
+        let id = $(this).data('id');
+        $('#'+id).addClass('show');
+        $('body').addClass('stopScroll');
+    });
     
            
     
