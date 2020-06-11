@@ -269,12 +269,13 @@
 
     //Accordion
     $('.accordionHead').on('click' , function(){
-        if( $(this).parent('.accordion').hasClass('open')) {
-            $('.accordion').removeClass('open');
-        } else {
-            $('.accordion').removeClass('open');
-            $(this).parent('.accordion').addClass('open');
-        }
+        // if( $(this).parent('.accordion').hasClass('open')) {
+        //     $('.accordion').removeClass('open');
+        // } else {
+        //     $('.accordion').removeClass('open');
+        //     $(this).parent('.accordion').addClass('open');
+        // }
+        $(this).parent('.accordion').toggleClass('open');
     });
 
     // Upload File 
